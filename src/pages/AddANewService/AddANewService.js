@@ -20,8 +20,8 @@ const AddANewService = () => {
     }
 
     return (
-        <div className="add-service">
-            <h2>Please Add a Service</h2>
+        <div className="add-service container mx-auto">
+            <h2 className='text-center my-4'>Please Add a Service</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("SpotName", { required: true, maxLength: 20 })} placeholder="Name" />
                 <textarea {...register("Country")} placeholder="Country" />
